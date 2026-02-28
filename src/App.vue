@@ -63,6 +63,8 @@
   <FormHandling></FormHandling>
   <hr>
   <ComputedProperties></ComputedProperties>
+  <hr>
+  <LearnWatchers></LearnWatchers>
 
 </template>
 
@@ -72,6 +74,10 @@ import Methods from './components/LearnMethods.vue';
 import EventHandling from './components/EventHandling.vue';
 import FormHandling from './components/FormHandling.vue';
 import ComputedProperties from './components/ComputedProperties.vue';
+import LearnWatchers from './components/LearnWatchers.vue';
+
+
+
 
 export default {
   name: 'App',
@@ -80,7 +86,8 @@ export default {
     Methods,
     EventHandling,
     FormHandling,
-    ComputedProperties
+    ComputedProperties,
+    LearnWatchers
   },
   data(){
     const obj = {
