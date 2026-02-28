@@ -61,6 +61,8 @@
   <EventHandling></EventHandling>
   <hr>
   <FormHandling></FormHandling>
+  <hr>
+  <ComputedProperties></ComputedProperties>
 
 </template>
 
@@ -69,6 +71,7 @@ import ListRenderingView from './components/ListRendering.vue';
 import Methods from './components/LearnMethods.vue';
 import EventHandling from './components/EventHandling.vue';
 import FormHandling from './components/FormHandling.vue';
+import ComputedProperties from './components/ComputedProperties.vue';
 
 export default {
   name: 'App',
@@ -76,7 +79,8 @@ export default {
     ListRenderingView,
     Methods,
     EventHandling,
-    FormHandling
+    FormHandling,
+    ComputedProperties
   },
   data(){
     const obj = {
