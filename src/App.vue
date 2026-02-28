@@ -21,6 +21,20 @@
     'sold-out': isSoldOut
   }">Object Conditional Movie</h2>
 
+
+  <h2 v-bind:style="{
+    color: highlightColor,
+    fontSize: headerSize + 'px',
+    padding: '20px'
+  }">Inline Style</h2>
+
+  <h2 v-bind:style="headerStyleObject">Style Object</h2>
+
+  <!--- you can remove the v-bind-->
+  <div :style="[baseStyleObject, successStyleObject]">Success Style</div>
+
+  <div :style="[baseStyleObject, dangerStyleObject]">Danger Style</div>
+
 </template>
 
 <script>
@@ -44,6 +58,35 @@ export default {
       status: 'danger',
       isPromoted: true,
       isSoldOut: true,
+
+      highlightColor: 'orange',
+      headerSize: 50,
+
+      headerStyleObject: {
+        color: 'orange',
+        fontSize: '50px',
+        padding: '20px'
+      },
+
+      baseStyleObject: {
+        fontSize: '50px',
+        padding: '10px',
+      },
+
+      successStyleObject: {
+        color: 'green',
+        backgroundColor: 'lightgreen',
+        border: '1px solid green',
+        padding: '20px',
+      },
+
+      dangerStyleObject: {
+        color: 'darkred',
+        backgroundColor: 'red',
+        border: '1px solid darkred',
+        marginTop: '10px',
+      }
+
     }
     return obj;
   }
