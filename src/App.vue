@@ -53,13 +53,19 @@
 
   <div :style="[baseStyleObject, dangerStyleObject]">Danger Style</div>
 
+
+  <ListRenderingView></ListRenderingView>
+
 </template>
 
 <script>
-
+import ListRenderingView from './components/ListRendering.vue';
 
 export default {
   name: 'App',
+  components: {
+    ListRenderingView
+  },
   data(){
     const obj = {
       firstName: "Rommel",
