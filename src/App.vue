@@ -59,6 +59,8 @@
   <Methods></Methods>
   <hr>
   <EventHandling></EventHandling>
+  <hr>
+  <FormHandling></FormHandling>
 
 </template>
 
@@ -66,13 +68,15 @@
 import ListRenderingView from './components/ListRendering.vue';
 import Methods from './components/LearnMethods.vue';
 import EventHandling from './components/EventHandling.vue';
+import FormHandling from './components/FormHandling.vue';
 
 export default {
   name: 'App',
   components: {
     ListRenderingView,
     Methods,
-    EventHandling
+    EventHandling,
+    FormHandling
   },
   data(){
     const obj = {
