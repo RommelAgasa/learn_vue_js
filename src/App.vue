@@ -1,4 +1,22 @@
 <template>
+
+
+  <!--- Conditional Rendering -->
+  <h2 v-if="num === 0">The number is zero.</h2>
+  <h2 v-else-if="num < 0">The number is negative</h2>
+  <h2 v-else-if="num > 0">The number is positive</h2>
+  <h2 v-else>Not number.</h2>
+
+  <template v-if="display">
+    <h2>Rommel</h2>
+    <h2>Learning</h2>
+    <h2>Vue</h2>
+  </template>
+
+
+  <h2 v-show="showElement">Using v-show</h2>
+  <h2 v-if="showElement">Using v-if</h2> <!-- set the showElement to false and inspect element --->
+
   <div>
     <h1>{{ firstName }} {{ lastName }}</h1>
     <p>Age: {{ age }}</p>
@@ -85,7 +103,13 @@ export default {
         backgroundColor: 'red',
         border: '1px solid darkred',
         marginTop: '10px',
-      }
+      },
+
+
+      // -------------------------------------
+      num: 0,
+      display: true,
+      showElement: true,
 
     }
     return obj;
