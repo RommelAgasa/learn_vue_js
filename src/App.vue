@@ -55,16 +55,20 @@
 
 
   <ListRenderingView></ListRenderingView>
+  <Methods></Methods>
 
 </template>
 
 <script>
 import ListRenderingView from './components/ListRendering.vue';
+import Methods from './components/LearnMethods.vue';
+
 
 export default {
   name: 'App',
   components: {
-    ListRenderingView
+    ListRenderingView,
+    Methods
   },
   data(){
     const obj = {
