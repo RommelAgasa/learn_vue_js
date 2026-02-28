@@ -55,20 +55,24 @@
 
 
   <ListRenderingView></ListRenderingView>
+  <hr>
   <Methods></Methods>
+  <hr>
+  <EventHandling></EventHandling>
 
 </template>
 
 <script>
 import ListRenderingView from './components/ListRendering.vue';
 import Methods from './components/LearnMethods.vue';
-
+import EventHandling from './components/EventHandling.vue';
 
 export default {
   name: 'App',
   components: {
     ListRenderingView,
-    Methods
+    Methods,
+    EventHandling
   },
   data(){
     const obj = {
